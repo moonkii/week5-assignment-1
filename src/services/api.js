@@ -20,7 +20,6 @@ export async function fetchCategories() {
 
 export async function fetchRestaurants({ region, categoryId }) {
   const url = `${BASE_URL}/restaurants?region=${region}&category=${categoryId}`;
-
   const response = await fetch(url);
 
   const data = await response.json();
